@@ -1,0 +1,70 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  background-size: 800% 800%;
+  animation: backgroundFlow 20s ease infinite;
+  color: #333;
+}
+
+@keyframes backgroundFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1, h2, h3 {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #ffe0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+video {
+  width: 300px;
+  height: auto;
+  border: 4px dashed white;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #fff;
+  margin: 20px 0;
+}
+
+.img-strip {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.img-strip img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}

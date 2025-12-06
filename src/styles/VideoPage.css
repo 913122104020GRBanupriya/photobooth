@@ -1,0 +1,74 @@
+/* src/pages/VideoPage.css */
+.video-page {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  min-height: 100vh;
+  color: #333;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.video-container {
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 600px;
+  border: 10px solid #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.video-preview {
+  width: 100%;
+  height: auto;
+}
+
+.filter-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border: 2px solid #ff7e5f;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-buttons button:hover,
+.filter-buttons .active {
+  background: #ff7e5f;
+  color: white;
+}
+
+.capture-btn {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.capture-btn:hover {
+  background-color: #e85c50;
+}
+
+.video-output {
+  margin-top: 2rem;
+}
+
+.recorded-video {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  border: 5px solid #fff;
+}
